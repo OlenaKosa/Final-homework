@@ -24,3 +24,29 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.main h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+@media (min-width: 768px) {
+  .main {
+    background-color: aquamarine;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    background-color: green;
+  }
+}
+@media (min-width: 1440px) {
+  .main {
+    background-color: blue;
+  }
+}
+@media (min-width: 1920px) {
+  .main {
+    background-color: blueviolet;
+  }
+}

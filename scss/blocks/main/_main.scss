@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use "../../variables" as *;
+
+.main {
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    background-color: aquamarine;
+  }
+
+  @media (min-width: map-get($screen, tablet-hd)) {
+    background-color: green;
+  }
+
+  @media (min-width: map-get($screen, desktop-sd)) {
+    background-color: blue;
+  }
+
+  @media (min-width: map-get($screen, desktop-hd)) {
+    background-color: blueviolet;
+  }
+
+}
