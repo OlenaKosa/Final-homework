@@ -1,0 +1,14 @@
+.services {
+
+  &__cards{
+
+  }
+
+  &__card {
+    margin-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      margin-bottom: 60px;
+    }
+  }
+}

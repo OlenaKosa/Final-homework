@@ -2,11 +2,28 @@
 @use "../../variables" as *;
 
 .main {
-  h1 {
-    font-weight: 700;
+  background-color: rgb(14, 14, 73);
+
+  &__title {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      font-size: 38px;
+      line-height: 46px;
+      margin-bottom: 60px;
+    }
   }
+
+  &__subtitle {
+  }
+
+
+
+
+
+
 
   @media (min-width: map-get($screen, tablet-sd)) {
     background-color: aquamarine;

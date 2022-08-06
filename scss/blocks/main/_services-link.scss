@@ -1,0 +1,22 @@
+.services-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #24A3FF;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.services-link:hover {
+  color: #F0145A;
+}
+
+.services-link::after {
+  content: ' 'url(../images/symbols/arrow_right.svg);
+}
+
+.services-link:hover::after {
+  content: ' 'url(../images/symbols/arrow_right_active.svg);
+}

@@ -1,5 +1,11 @@
 @use "./variables" as *;
 
+@import "./normalize";
 @import "./fonts";
 @import "./settings";
+@import "./blocks/main/services-link";
+@import "./blocks/main/services-icon";
+@import "./blocks/main/services-card";
+@import "./blocks/main/services";
+@import "./blocks/main/titles";
 @import "./blocks/main/main";
