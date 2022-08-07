@@ -1,8 +1,4 @@
-@use 'sass:map';
-@use "../../variables" as *;
-
 .main {
-  background-color: rgb(14, 14, 73);
 
   &__title {
     font-size: 30px;
@@ -17,6 +13,7 @@
   }
 
   &__subtitle {
+
   }
 
 
@@ -26,19 +23,19 @@
 
 
   @media (min-width: map-get($screen, tablet-sd)) {
-    background-color: aquamarine;
+  
   }
 
   @media (min-width: map-get($screen, tablet-hd)) {
-    background-color: green;
+  
   }
 
   @media (min-width: map-get($screen, desktop-sd)) {
-    background-color: blue;
+  
   }
 
   @media (min-width: map-get($screen, desktop-hd)) {
-    background-color: blueviolet;
+  
   }
 
 }

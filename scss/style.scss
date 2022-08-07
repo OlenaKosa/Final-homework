@@ -1,8 +1,10 @@
+@use 'sass:map';
 @use "./variables" as *;
 
 @import "./normalize";
 @import "./fonts";
 @import "./settings";
+@import "./blocks/main/header";
 @import "./blocks/main/services-link";
 @import "./blocks/main/services-icon";
 @import "./blocks/main/services-card";

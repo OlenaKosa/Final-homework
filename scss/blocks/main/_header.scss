@@ -1,0 +1,30 @@
+.header {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  height: 20px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  right: 40px;
+}

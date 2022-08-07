@@ -2,13 +2,40 @@
 
   &__cards{
 
+    @media (min-width: map-get($screen, tablet-sd)) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+    }
+    
+    @media (min-width: map-get($screen, desktop-sd)) {
+    }
+    
+    @media (min-width: map-get($screen, desktop-hd)) {
+    }
   }
 
   &__card {
     margin-bottom: 30px;
 
     @media (min-width: map-get($screen, tablet-sd)) {
-      margin-bottom: 60px;
+      width: 294px;
+    }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+      width: 261px;
+    }
+    
+    @media (min-width: map-get($screen, desktop-sd)) {
+      width: 400px;
+    }
+    
+    @media (min-width: map-get($screen, desktop-hd)) {
+      width: 493px;
     }
   }
 }

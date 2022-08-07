@@ -12,3 +12,21 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.wrapper {
+  margin: 0 30px;
+  
+  @media (min-width: map-get($screen, tablet-sd)) {
+    margin: 0 60px;
+  }
+  
+  @media (min-width: map-get($screen, tablet-hd)) {
+  }
+  
+  @media (min-width: map-get($screen, desktop-sd)) {
+  }
+  
+  @media (min-width: map-get($screen, desktop-hd)) {
+    margin: 0 160px;
+  }
+}

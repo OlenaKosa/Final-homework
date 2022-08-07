@@ -336,6 +336,51 @@ h2 {
   margin-bottom: 0;
 }
 
+.wrapper {
+  margin: 0 30px;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    margin: 0 160px;
+  }
+}
+
+.header {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  height: 20px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  right: 40px;
+}
+
 .services-link {
   font-weight: 700;
   font-size: 14px;
@@ -385,12 +430,35 @@ h2 {
   color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+  .services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
 .services__card {
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .services__card {
-    margin-bottom: 60px;
+    width: 294px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__card {
+    width: 261px;
+  }
+}
+@media (min-width: 1440px) {
+  .services__card {
+    width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .services__card {
+    width: 493px;
   }
 }
 
@@ -408,9 +476,6 @@ h2 {
   color: #24A3FF;
 }
 
-.main {
-  background-color: rgb(14, 14, 73);
-}
 .main__title {
   font-size: 30px;
   line-height: 37px;
@@ -421,25 +486,5 @@ h2 {
     font-size: 38px;
     line-height: 46px;
     margin-bottom: 60px;
-  }
-}
-@media (min-width: 768px) {
-  .main {
-    background-color: aquamarine;
-  }
-}
-@media (min-width: 1024px) {
-  .main {
-    background-color: green;
-  }
-}
-@media (min-width: 1440px) {
-  .main {
-    background-color: blue;
-  }
-}
-@media (min-width: 1920px) {
-  .main {
-    background-color: blueviolet;
   }
 }
