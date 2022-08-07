@@ -1,0 +1,7 @@
+.not-for-mobile {
+  display:none;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    display: inline-block;
+  }
+}

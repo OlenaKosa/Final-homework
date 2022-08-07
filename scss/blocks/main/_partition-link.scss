@@ -1,4 +1,4 @@
-.services-link {
+.partition-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -9,14 +9,14 @@
   margin-bottom: 10px;
 }
 
-.services-link:hover {
+.partition-link:hover {
   color: #F0145A;
 }
 
-.services-link::after {
+.partition-link::after {
   content: ' 'url(../images/symbols/arrow_right.svg);
 }
 
-.services-link:hover::after {
+.partition-link:hover::after {
   content: ' 'url(../images/symbols/arrow_right_active.svg);
 }

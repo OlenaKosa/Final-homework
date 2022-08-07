@@ -381,7 +381,7 @@ h2 {
   right: 40px;
 }
 
-.services-link {
+.partition-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -392,15 +392,15 @@ h2 {
   margin-bottom: 10px;
 }
 
-.services-link:hover {
+.partition-link:hover {
   color: #F0145A;
 }
 
-.services-link::after {
+.partition-link::after {
   content: " " url(../images/symbols/arrow_right.svg);
 }
 
-.services-link:hover::after {
+.partition-link:hover::after {
   content: " " url(../images/symbols/arrow_right_active.svg);
 }
 
@@ -462,6 +462,127 @@ h2 {
   }
 }
 
+.logo-links {
+  font-size: 0;
+}
+@media (min-width: 1920px) {
+  .logo-links {
+    margin: 0 100px;
+    border-radius: 12px;
+  }
+  .logo-links .border-round1 {
+    border-top-left-radius: 12px;
+  }
+  .logo-links .border-round2 {
+    border-top-right-radius: 12px;
+  }
+  .logo-links .border-round3 {
+    border-bottom-left-radius: 12px;
+  }
+  .logo-links .border-round4 {
+    border-bottom-right-radius: 12px;
+  }
+}
+.logo-links__link {
+  display: inline-block;
+  height: 120px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .logo-links__link {
+    width: 33.3%;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-links__link {
+    width: 25%;
+  }
+}
+.logo-links .hilel {
+  background-color: #1C4280;
+  background-image: url("../images/logos/hillel.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 217px 48px;
+}
+.logo-links .wannabiz {
+  background-color: #143646;
+  background-image: url("../images/logos/wannabiz.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 199px 32px;
+}
+.logo-links .tapgerine {
+  background-color: #F48B30;
+  background-image: url("../images/logos/tapgerine.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 179px 44px;
+}
+.logo-links .look3d {
+  background-color: #9E4DC3;
+  background-image: url("../images/logos/3dlook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 180px 42px;
+}
+.logo-links .orangear {
+  background-color: #FD9339;
+  background-image: url("../images/logos/orangear.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 174px 44px;
+}
+.logo-links .adtelligent {
+  background-color: #E2E2E4;
+  background-image: url("../images/logos/adtelligent.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 195px 48px;
+}
+.logo-links .clickky {
+  background-color: #C71C36;
+  background-image: url("../images/logos/clickky.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 138px 61px;
+}
+.logo-links .eco-leasing {
+  background-color: #DCF3F9;
+  background-image: url("../images/logos/eco-leasing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 146px 76px;
+}
+.logo-links .infratek {
+  background-color: #EAEAEA;
+  background-image: url("../images/logos/infratek.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 182px 60px;
+}
+.logo-links .city-park {
+  background-color: #282240;
+  background-image: url("../images/logos/city-park.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 181px 38px;
+}
+.logo-links .artprint {
+  background-color: #1D4568;
+  background-image: url("../images/logos/artprint.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 189px 46px;
+}
+.logo-links .ultimate-card {
+  background-color: #000000;
+  background-image: url("../images/logos/ultimate-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 152px 95px;
+}
+
 .main-title {
   font-weight: 700;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -486,5 +607,14 @@ h2 {
     font-size: 38px;
     line-height: 46px;
     margin-bottom: 60px;
+  }
+}
+
+.not-for-mobile {
+  display: none;
+}
+@media (min-width: 768px) {
+  .not-for-mobile {
+    display: inline-block;
   }
 }

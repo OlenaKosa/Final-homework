@@ -1,0 +1,27 @@
+@mixin flexsb() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin font($fs,$lh,$fw:0) {
+  font-size: $fs;
+
+  @if ($fs>$lh) {
+    line-height: $fs;
+  } @else {
+    line-height: $lh;
+  }
+
+  @if ($fw!=0) {
+    font-weight: $fw;
+  }
+}
+
+@mixin bgimage($bgcolor,$url,$bgsize:cover) {
+  background-color: $bgcolor;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $bgsize;
+}

@@ -1,13 +1,17 @@
 @use 'sass:map';
 @use "./variables" as *;
+@use "./mixins" as *;
 
 @import "./normalize";
 @import "./fonts";
 @import "./settings";
 @import "./blocks/main/header";
-@import "./blocks/main/services-link";
+@import "./blocks/main/partition-link";
 @import "./blocks/main/services-icon";
 @import "./blocks/main/services-card";
 @import "./blocks/main/services";
+@import "./blocks/main/logo-links";
 @import "./blocks/main/titles";
 @import "./blocks/main/main";
+
+@import "./not-for-mobile";

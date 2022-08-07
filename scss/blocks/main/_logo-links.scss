@@ -1,0 +1,88 @@
+.logo-links {
+  font-size: 0;
+
+  @media (min-width: map-get($screen, desktop-hd)) {
+    margin: 0 100px;
+    border-radius: 12px;
+    //background-color: cadetblue;
+
+    .border-round1 {
+      border-top-left-radius: 12px;
+    }
+
+    .border-round2 {
+      border-top-right-radius: 12px;
+    }
+
+    .border-round3 {
+      border-bottom-left-radius: 12px;
+    }
+
+    .border-round4 {
+      border-bottom-right-radius: 12px;
+    }
+
+  }
+
+  &__link {
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      width: 33.3%;
+    }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+      width: 25%;
+    }
+  }
+
+  .hilel {
+    @include bgimage(#1C4280,"../images/logos/hillel.svg",217px 48px);
+  }
+
+  .wannabiz {
+    @include bgimage(#143646,"../images/logos/wannabiz.svg",199px 32px);
+  }
+
+  .tapgerine {
+    @include bgimage(#F48B30,"../images/logos/tapgerine.svg",179px 44px);
+  }
+
+  .look3d {
+    @include bgimage(#9E4DC3,"../images/logos/3dlook.svg",180px 42px);
+  }
+
+  .orangear {
+    @include bgimage(#FD9339,"../images/logos/orangear.svg",174px 44px);
+  }
+
+  .adtelligent {
+    @include bgimage(#E2E2E4,"../images/logos/adtelligent.svg",195px 48px);
+  }
+
+  .clickky {
+    @include bgimage(#C71C36,"../images/logos/clickky.svg",138px 61px);
+  }
+
+  .eco-leasing {
+    @include bgimage(#DCF3F9,"../images/logos/eco-leasing.svg",146px 76px);
+  }
+
+  .infratek {
+    @include bgimage(#EAEAEA,"../images/logos/infratek.svg",182px 60px);
+  }
+
+  .city-park {
+    @include bgimage(#282240,"../images/logos/city-park.svg",181px 38px);
+  }
+
+  .artprint {
+    @include bgimage(#1D4568,"../images/logos/artprint.svg",189px 46px);
+  }
+
+  .ultimate-card {
+    @include bgimage(#000000,"../images/logos/ultimate-card.svg",152px 95px);
+  }
+}

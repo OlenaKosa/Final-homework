@@ -5,3 +5,15 @@ $screen: (
   desktop-sd: 1440px,
   desktop-hd: 1920px
   );
+
+  // @media (min-width: map-get($screen, tablet-sd)) {
+  // }
+  
+  // @media (min-width: map-get($screen, tablet-hd)) {
+  // }
+  
+  // @media (min-width: map-get($screen, desktop-sd)) {
+  // }
+  
+  // @media (min-width: map-get($screen, desktop-hd)) {
+  // }
