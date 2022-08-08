@@ -11,6 +11,6 @@
 
   &__text {
     @include font(16px,26px);
-    color: #FFFFFF;
+    color: $contrast-text-color;
   }
 }
