@@ -1,31 +1,36 @@
 .logo-links {
-  font-size: 0;
+  //font-size: 0;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: map-get($screen, desktop-hd)) {
     margin: 0 100px;
     border-radius: 12px;
-    //background-color: cadetblue;
 
-    .border-round1 {
+    .rounded-corner1 {
       border-top-left-radius: 12px;
     }
 
-    .border-round2 {
+    .rounded-corner2 {
       border-top-right-radius: 12px;
     }
 
-    .border-round3 {
+    .rounded-corner3 {
       border-bottom-left-radius: 12px;
     }
 
-    .border-round4 {
+    .rounded-corner4 {
       border-bottom-right-radius: 12px;
     }
 
   }
 
   &__link {
-    display: inline-block;
+    display: block;
     height: 120px;
     width: 100%;
 
