@@ -2,9 +2,7 @@
   //font-size: 0;
 
   @media (min-width: map-get($screen, tablet-sd)) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex-sb-wrap();
   }
 
   @media (min-width: map-get($screen, desktop-hd)) {
@@ -35,7 +33,7 @@
     width: 100%;
 
     @media (min-width: map-get($screen, tablet-sd)) {
-      width: 33.3%;
+      width: 33.33%;
     }
 
     @media (min-width: map-get($screen, tablet-hd)) {

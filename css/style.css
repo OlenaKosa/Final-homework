@@ -496,7 +496,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .logo-links__link {
-    width: 33.3%;
+    width: 33.33%;
   }
 }
 @media (min-width: 1024px) {

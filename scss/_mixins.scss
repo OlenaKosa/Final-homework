@@ -1,7 +1,7 @@
-@mixin flexsb() {
+@mixin flex-sb-wrap() {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 @mixin font($fs,$lh,$fw:0) {

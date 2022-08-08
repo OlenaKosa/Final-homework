@@ -1,13 +1,11 @@
 .main {
 
   &__title {
-    font-size: 30px;
-    line-height: 37px;
+    @include font(30px,37px);
     margin-bottom: 30px;
 
     @media (min-width: map-get($screen, tablet-sd)) {
-      font-size: 38px;
-      line-height: 46px;
+      @include font(38px,46px);
       margin-bottom: 60px;
     }
   }
