@@ -5,6 +5,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  @include font(30px,37px);
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    @include font(38px,46px);
+  }
 }
 
 .subtitle {

@@ -3,6 +3,15 @@
   border-radius: 0px 0px 12px 12px;
   margin-bottom: 80px;
   position: relative;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      margin-bottom: 60px;
+    }
+  }
+
 }
 
 .header::after {

@@ -3,26 +3,17 @@
   &__cards{
 
     @media (min-width: map-get($screen, tablet-sd)) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+      @include flex-sb-wrap();
         gap: 60px;
-    }
-
-    @media (min-width: map-get($screen, tablet-hd)) {
-    }
-    
-    @media (min-width: map-get($screen, desktop-sd)) {
-    }
-    
-    @media (min-width: map-get($screen, desktop-hd)) {
     }
   }
 
   &__card {
     margin-bottom: 30px;
+    //width: 315px;
 
     @media (min-width: map-get($screen, tablet-sd)) {
+      margin-bottom: 0;
       width: 294px;
     }
 
