@@ -3,8 +3,8 @@
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  //background-clip: text;
-  //text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   @include font(30px,37px);
 
   @media (min-width: map-get($screen, tablet-sd)) {
@@ -14,5 +14,5 @@
 
 .subtitle {
   font-weight: 700;
-  color: #24A3FF;
+  color: $light-subtitle-color;
 }

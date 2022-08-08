@@ -1,0 +1,12 @@
+.footer {
+  background-color: $light-background;
+  padding: 30px;
+
+
+  address {
+    @include font(16px,20px);
+    color: $dark-subtitle-color;
+  }
+
+
+}

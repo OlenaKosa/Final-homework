@@ -4,13 +4,13 @@
   line-height: 17px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #24A3FF;
+  color: $light-subtitle-color;
   display: inline-block;
   margin-bottom: 10px;
 }
 
 .partition-link:hover {
-  color: #F0145A;
+  color: $active-color;
 }
 
 .partition-link::after {
