@@ -503,6 +503,12 @@ h2 {
   font-weight: 700;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .header__definition-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 .header__definition-text {
   font-size: 19px;
   line-height: 30px;
