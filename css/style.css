@@ -406,6 +406,14 @@ h2 {
   font-weight: 700;
 }
 
+.symbol {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1024px) {
   .definition {
     display: flex;
