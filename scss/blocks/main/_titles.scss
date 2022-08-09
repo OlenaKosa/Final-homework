@@ -16,3 +16,13 @@
   font-weight: 700;
   color: $light-subtitle-color;
 }
+
+.promo-title {
+  font-weight: 700;
+  color: $colorless-color;
+  @include font(30px,37px);
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    @include font(38px,46px);
+  }
+}

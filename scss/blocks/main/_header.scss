@@ -4,6 +4,36 @@
   margin-bottom: 80px;
   position: relative;
 
+  &__definition {
+    color: $contrast-text-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: map-get($screen, desktop-sd)) {
+      padding-left: 180px;
+      padding-right: 180px;
+    }
+
+    @media (min-width: map-get($screen, desktop-hd)) {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+  }
+
+  &__definition-title {
+    @include font(20px,24px,700);
+    margin-bottom: 30px;
+  }
+
+  &__definition-text {
+    @include font(19px,30px);
+  }
+
   &__title {
     margin-bottom: 30px;
 
