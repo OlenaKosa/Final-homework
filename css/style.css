@@ -409,11 +409,11 @@ h2 {
   display: flex;
   gap: 30px;
   width: 100%;
-  margin-bottom: 30px;
 }
 @media (min-width: 1024px) {
   .definition__promo {
     flex-wrap: wrap;
+    align-self: center;
     width: 375px;
     margin-right: 60px;
   }
@@ -431,11 +431,20 @@ h2 {
 @media (min-width: 1024px) {
   .definition__body {
     margin-left: 60px;
+    align-self: center;
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .definition {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (max-width: 1023px) {
-  .definition__body::before {
+  .definition__hr::before {
     content: "";
+    margin-top: 30px;
     margin-bottom: 30px;
     display: block;
     width: 100%;
@@ -443,10 +452,10 @@ h2 {
     background: rgba(255, 255, 255, 0.3);
   }
 }
-@media (min-width: 1024px) {
-  .definition {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 1023px) and (min-width: 768px) {
+  .definition__hr::before {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1024px) {
