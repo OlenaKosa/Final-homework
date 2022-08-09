@@ -4,6 +4,27 @@
   margin-bottom: 80px;
   position: relative;
 
+  &__symbol {
+    @include bgimage(none,"../images/symbols/Symbol.svg",cover);
+  }
+
+  &__symbol-link {
+    display: block;
+    width: 42px;
+    height: 42px;
+    @include bgimage(none,"../images/symbols/arrow-bottom.svg",18px 9px);
+    //border: 2px solid $contrast-text-color;
+    border: 2px solid color.change($contrast-text-color, $alpha: 0.5);
+    border-radius: 50%;
+  }
+
+  &__symbol-link:hover {
+    @include bgimage(none,"../images/symbols/arrow-bottom-active.svg",18px 9px);
+    //border: 2px solid $active-color;
+    border: 2px solid color.change($active-color, $alpha: 0.5);
+
+  }
+
   &__definition {
     color: $contrast-text-color;
     padding-top: 30px;

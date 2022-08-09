@@ -1,11 +1,10 @@
 .main-title {
-  font-weight: 700;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  @include font(30px,37px);
+  @include font(30px,37px,700);
 
   @media (min-width: map-get($screen, tablet-sd)) {
     @include font(38px,46px);
@@ -18,11 +17,15 @@
 }
 
 .promo-title {
-  font-weight: 700;
   color: $colorless-color;
-  @include font(30px,37px);
+  @include font(30px,37px,700);
 
   @media (min-width: map-get($screen, tablet-sd)) {
     @include font(38px,46px);
   }
+}
+
+.header-title {
+  color: $contrast-text-color;
+  @include font(38px,46px,700);
 }

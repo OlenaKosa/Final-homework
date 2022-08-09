@@ -365,7 +365,6 @@ h2 {
 }
 
 .main-title {
-  font-weight: 700;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -373,6 +372,7 @@ h2 {
   text-fill-color: transparent;
   font-size: 30px;
   line-height: 37px;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .main-title {
@@ -387,16 +387,23 @@ h2 {
 }
 
 .promo-title {
-  font-weight: 700;
   color: #B3B3BA;
   font-size: 30px;
   line-height: 37px;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .promo-title {
     font-size: 38px;
     line-height: 46px;
   }
+}
+
+.header-title {
+  color: #FFFFFF;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
 }
 
 @media (min-width: 1024px) {
@@ -473,6 +480,33 @@ h2 {
   border-radius: 0px 0px 12px 12px;
   margin-bottom: 80px;
   position: relative;
+}
+.header__symbol {
+  background-color: none;
+  background-image: url("../images/symbols/Symbol.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header__symbol-link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: none;
+  background-image: url("../images/symbols/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 9px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.header__symbol-link:hover {
+  background-color: none;
+  background-image: url("../images/symbols/arrow-bottom-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 9px;
+  border: 2px solid rgba(240, 20, 90, 0.5);
 }
 .header__definition {
   color: #FFFFFF;

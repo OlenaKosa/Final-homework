@@ -44,9 +44,10 @@
   }
 
   &__hr {
+    //display: none;
   }
 
-  @media (max-width: map-get($screen, tablet-hd)-1) {
+  @media (max-width: (map-get($screen, tablet-hd)-1)) {
     &__hr::before {
       content: '';
       margin-top: 30px;
