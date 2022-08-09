@@ -5,7 +5,12 @@
   position: relative;
 
   &__symbol {
-    @include bgimage(none,"../images/symbols/Symbol.svg",cover);
+    @include bgimage(none,"../images/symbols/Symbol.svg",contain);
+    min-height: 100vh;
+  }
+
+  &__symbol-title {
+    text-align: center;
   }
 
   &__symbol-link {

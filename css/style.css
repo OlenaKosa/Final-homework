@@ -408,9 +408,8 @@ h2 {
 
 .symbol {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -494,7 +493,11 @@ h2 {
   background-image: url("../images/symbols/Symbol.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  min-height: 100vh;
+}
+.header__symbol-title {
+  text-align: center;
 }
 .header__symbol-link {
   display: block;
@@ -637,6 +640,14 @@ h2 {
   color: #FFFFFF;
 }
 
+.services {
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .services {
+    padding-bottom: 60px;
+  }
+}
 @media (min-width: 768px) {
   .services__cards {
     display: flex;
