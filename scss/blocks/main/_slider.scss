@@ -1,0 +1,44 @@
+.slider {
+  background-color: $light-background;
+  //border: 1px solid grey;
+  border-radius: 12px;
+  //padding-top: 30px;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    //padding-top: 60px;
+  }
+
+  @media (min-width: map-get($screen, tablet-hd)) {
+    display: flex;
+  }
+
+
+  &__image {
+    @include bgimage(#EDEDF7,"../images/pictures/Team-1.jpg");
+
+    @media (max-width: (map-get($screen, tablet-hd)-1)) {
+      height: 500px;
+      border-radius: 12px 12px 0px 0px;
+    }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+      width: 400px;
+      border-radius: 12px 0px 0px 12px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    padding: 30px;
+  }
+
+  &__subtext {
+    color: $colorless-color;
+    @include font (16px,20px,700);
+  }
+
+  &__describe {
+    color: $colorless-color;
+    @include font (14px,22px);
+  }
+}

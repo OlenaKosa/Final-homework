@@ -678,6 +678,7 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
@@ -805,14 +806,77 @@ h4 {
   background-size: 152px 95px;
 }
 
+.slider {
+  background-color: #F5F5FA;
+  border-radius: 12px;
+}
+@media (min-width: 1024px) {
+  .slider {
+    display: flex;
+  }
+}
+.slider__image {
+  background-color: #EDEDF7;
+  background-image: url("../images/pictures/Team-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1023px) {
+  .slider__image {
+    height: 500px;
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider__image {
+    width: 400px;
+    border-radius: 12px 0px 0px 12px;
+    flex-shrink: 0;
+  }
+}
+.slider__text {
+  padding: 30px;
+}
+.slider__subtext {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.slider__describe {
+  color: #B3B3BA;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.pulications {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pulications__title {
+  margin-bottom: 30px;
+}
 .footer {
   background-color: #F5F5FA;
   padding: 30px;
 }
-.footer address {
+.footer__adresses {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__adresses address {
   font-size: 16px;
   line-height: 20px;
   color: #323264;
+}
+.footer__adresses::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-bottom: 30px;
+  background-color: #E6E6F0;
 }
 
 @media (max-width: 767px) {

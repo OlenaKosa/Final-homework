@@ -2,11 +2,23 @@
   background-color: $light-background;
   padding: 30px;
 
+  &__adresses {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-  address {
-    @include font(16px,20px);
-    color: $dark-subtitle-color;
+    address {
+      @include font(16px,20px);
+      color: $dark-subtitle-color;
+    }
+
   }
 
-
+  &__adresses::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin-bottom: 30px;
+    background-color: $light-hr-color;
+  }
 }
