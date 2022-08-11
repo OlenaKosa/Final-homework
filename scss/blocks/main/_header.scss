@@ -7,6 +7,12 @@
   &__symbol {
     @include bgimage(none,"../images/symbols/Symbol.svg",contain);
     min-height: 100vh;
+    padding-bottom: 30px;
+    
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding-top: 50px;
+    }
+
   }
 
   &__symbol-title {
