@@ -25,6 +25,10 @@
     padding: 30px;
   }
 
+  &__title {
+    margin-bottom: 30px;
+  }
+
   &__subtext {
     color: $colorless-color;
     @include font (16px,20px,700);
@@ -33,5 +37,12 @@
   &__describe {
     color: $colorless-color;
     @include font (14px,22px);
+  }
+
+  &__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 }

@@ -1,0 +1,18 @@
+.slider-buttons {
+  
+  &__button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: color.change($light-subtitle-color, $alpha: 0.2);
+    border-radius: 50%;
+  }
+
+  &__button:active {
+    background-color: $light-subtitle-color;
+  }
+
+  &__button--active {
+    background-color: $light-subtitle-color;
+  }
+}

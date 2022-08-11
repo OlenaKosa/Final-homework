@@ -37,7 +37,6 @@
     @include bgimage(none,"../images/symbols/arrow-bottom-active.svg",18px 9px);
     //border: 2px solid $active-color;
     border: 2px solid color.change($active-color, $alpha: 0.5);
-
   }
 
   &__definition {

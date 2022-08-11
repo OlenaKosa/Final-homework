@@ -815,6 +815,20 @@ h4 {
   background-size: 152px 95px;
 }
 
+.slider-buttons__button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(36, 163, 255, 0.2);
+  border-radius: 50%;
+}
+.slider-buttons__button:active {
+  background-color: #24A3FF;
+}
+.slider-buttons__button--active {
+  background-color: #24A3FF;
+}
+
 .slider {
   background-color: #F5F5FA;
   border-radius: 12px;
@@ -847,6 +861,9 @@ h4 {
 .slider__text {
   padding: 30px;
 }
+.slider__title {
+  margin-bottom: 30px;
+}
 .slider__subtext {
   color: #B3B3BA;
   font-size: 16px;
@@ -857,6 +874,12 @@ h4 {
   color: #B3B3BA;
   font-size: 14px;
   line-height: 22px;
+}
+.slider__buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .publications-card {
