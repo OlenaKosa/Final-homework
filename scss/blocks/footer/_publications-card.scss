@@ -1,3 +1,33 @@
 .publications-card {
+  padding: 30px;
+  background-color: $body-background-color;
+  border-radius: 8px;
   
+  &__image {
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &__title {
+    @include font (16px, 20px);
+    margin-bottom: 15px;
+  }
+
+  &__title-date {
+    @include font (12px, 15px,700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $colorless-color;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid $light-hr-color;
+  }
+
+  &__context {
+    margin-top: 15px;
+    @include font (14px, 22px);
+    color: $text-color;
+  }
+
 }

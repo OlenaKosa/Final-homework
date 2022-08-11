@@ -1,17 +1,10 @@
 .slider {
   background-color: $light-background;
-  //border: 1px solid grey;
   border-radius: 12px;
-  //padding-top: 30px;
-
-  @media (min-width: map-get($screen, tablet-sd)) {
-    //padding-top: 60px;
-  }
 
   @media (min-width: map-get($screen, tablet-hd)) {
     display: flex;
   }
-
 
   &__image {
     @include bgimage(#EDEDF7,"../images/pictures/Team-1.jpg");

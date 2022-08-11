@@ -329,6 +329,7 @@ body {
   font-family: "Montserrat", sans-serif;
   min-width: 375px;
   overflow: auto;
+  background-color: #FFFFFF;
 }
 
 p,
@@ -341,19 +342,22 @@ h4 {
 }
 
 .wrapper {
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   .wrapper {
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 1920px) {
   .wrapper {
-    margin-left: 160px;
-    margin-right: 160px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
 
@@ -478,8 +482,13 @@ h4 {
 .header {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
-  margin-bottom: 80px;
   position: relative;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 80px;
+  }
 }
 .header__symbol {
   background-color: none;
@@ -498,10 +507,10 @@ h4 {
 .header__symbol-title {
   text-align: center;
 }
-.header__symbol-link {
+.header__symbol-button {
   display: block;
-  width: 42px;
-  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
   background-color: none;
   background-image: url("../images/symbols/arrow-bottom.svg");
   background-repeat: no-repeat;
@@ -510,7 +519,7 @@ h4 {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
-.header__symbol-link:hover {
+.header__symbol-button:hover {
   background-color: none;
   background-image: url("../images/symbols/arrow-bottom-active.svg");
   background-repeat: no-repeat;
@@ -721,7 +730,7 @@ h4 {
     width: 25%;
   }
 }
-.logo-links .hilel {
+.logo-links .hillel {
   background-color: #1C4280;
   background-image: url("../images/logos/hillel.svg");
   background-repeat: no-repeat;
@@ -850,11 +859,44 @@ h4 {
   line-height: 22px;
 }
 
-.pulications {
+.publications-card {
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+.publications-card__image {
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 8px 8px 0px 0px;
+}
+.publications-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.publications-card__title-date {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 4px solid #E6E6F0;
+}
+.publications-card__context {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.publications {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.pulications__title {
+.publications__title {
   margin-bottom: 30px;
 }
 .footer {
