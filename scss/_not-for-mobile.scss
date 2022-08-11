@@ -1,7 +1,5 @@
-.not-for-mobile {
-  display: none;
-
-  @media (min-width: map-get($screen, tablet-sd)) {
-    display: block;
+@media (max-width: (map-get($screen, tablet-sd)-1)) {
+  .not-for-mobile {
+    display: none;
   }
 }

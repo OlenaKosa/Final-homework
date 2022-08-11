@@ -1,5 +1,12 @@
 .logo-links {
-  //font-size: 0;
+
+  &__title {
+    color: $dark-subtitle-color;
+    @include font(14px,17px,700);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
   @media (min-width: map-get($screen, tablet-sd)) {
     @include flex-sb-wrap();

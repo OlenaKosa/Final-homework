@@ -655,12 +655,13 @@ h4 {
     gap: 60px;
   }
 }
-.services__card {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .services__card {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 768px) {
   .services__card {
-    margin-bottom: 0;
     width: calc(50% - 30px);
   }
 }
@@ -670,6 +671,15 @@ h4 {
   }
 }
 
+.logo-links__title {
+  color: #323264;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .logo-links {
     display: flex;
@@ -805,11 +815,8 @@ h4 {
   color: #323264;
 }
 
-.not-for-mobile {
-  display: none;
-}
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .not-for-mobile {
-    display: block;
+    display: none;
   }
 }
