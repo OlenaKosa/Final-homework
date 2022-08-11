@@ -1,4 +1,9 @@
 .services {
+  padding-bottom: 30px;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    padding-bottom: 60px;
+  }
 
   &__cards{
 

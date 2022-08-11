@@ -452,6 +452,14 @@ h2 {
   color: #FFFFFF;
 }
 
+.services {
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .services {
+    padding-bottom: 60px;
+  }
+}
 @media (min-width: 768px) {
   .services__cards {
     display: flex;
