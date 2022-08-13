@@ -36,9 +36,11 @@
   }
 
   &__link {
-    display: block;
     height: 120px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: map-get($screen, tablet-sd)) {
       width: 33.33%;
@@ -50,50 +52,122 @@
   }
 
   .hillel {
-    @include bgimage(#1C4280,"../images/logos/hillel.svg",217px 48px);
+    //@include bgimage(#1C4280,"../images/logos/hillel.svg",217px 48px);
+    background-color: #1C4280;
+
+    img {
+      width: 217px;
+      height: 48px;
+    }
   }
 
   .wannabiz {
-    @include bgimage(#143646,"../images/logos/wannabiz.svg",199px 32px);
+    //@include bgimage(#143646,"../images/logos/wannabiz.svg",199px 32px);
+    background-color: #143646;
+
+    img {
+      width: 199px;
+      height: 32px;
+    }
   }
 
   .tapgerine {
-    @include bgimage(#F48B30,"../images/logos/tapgerine.svg",179px 44px);
+    //@include bgimage(#F48B30,"../images/logos/tapgerine.svg",179px 44px);
+    background-color: #F48B30;
+
+    img {
+      width: 179px;
+      height: 44px;
+    }
   }
 
   .look3d {
-    @include bgimage(#9E4DC3,"../images/logos/3dlook.svg",180px 42px);
+    //@include bgimage(#9E4DC3,"../images/logos/3dlook.svg",180px 42px);
+    background-color: #9E4DC3;
+
+    img {
+      width: 180px;
+      height: 42px;
+    }
   }
 
   .orangear {
-    @include bgimage(#FD9339,"../images/logos/orangear.svg",174px 44px);
+    //@include bgimage(#FD9339,"../images/logos/orangear.svg",174px 44px);
+    background-color: #FD9339;
+
+    img {
+      width: 174px;
+      height: 44px;
+    }
   }
 
   .adtelligent {
-    @include bgimage(#E2E2E4,"../images/logos/adtelligent.svg",195px 48px);
+    //@include bgimage(#E2E2E4,"../images/logos/adtelligent.svg",195px 48px);
+    background-color: #E2E2E4;
+
+    img {
+      width: 195px;
+      height: 48px;
+    }
   }
 
   .clickky {
-    @include bgimage(#C71C36,"../images/logos/clickky.svg",138px 61px);
+    //@include bgimage(#C71C36,"../images/logos/clickky.svg",138px 61px);
+    background-color: #C71C36;
+
+    img {
+      width: 138px;
+      height: 61px;
+    }
   }
 
   .eco-leasing {
-    @include bgimage(#DCF3F9,"../images/logos/eco-leasing.svg",146px 76px);
+    //@include bgimage(#DCF3F9,"../images/logos/eco-leasing.svg",146px 76px);
+    background-color: #DCF3F9;
+
+    img {
+      width: 146px;
+      height: 76px;
+    }
   }
 
   .infratek {
-    @include bgimage(#EAEAEA,"../images/logos/infratek.svg",182px 60px);
+    //@include bgimage(#EAEAEA,"../images/logos/infratek.svg",182px 60px);
+    background-color: #EAEAEA;
+
+    img {
+      width: 182px;
+      height: 60px;
+    }
   }
 
   .city-park {
-    @include bgimage(#282240,"../images/logos/city-park.svg",181px 38px);
+    //@include bgimage(#282240,"../images/logos/city-park.svg",181px 38px);
+    background-color: #282240;
+
+    img {
+      width: 181px;
+      height: 38px;
+    }
   }
 
   .artprint {
-    @include bgimage(#1D4568,"../images/logos/artprint.svg",189px 46px);
+    //@include bgimage(#1D4568,"../images/logos/artprint.svg",189px 46px);
+    background-color: #1D4568;
+
+    img {
+      width: 189px;
+      height: 46px;
+    }
   }
 
   .ultimate-card {
-    @include bgimage(#000000,"../images/logos/ultimate-card.svg",152px 95px);
+    //@include bgimage(#000000,"../images/logos/ultimate-card.svg",152px 95px);
+    background-color: #000000;
+
+    img {
+      width: 152px;
+      height: 95px;
+    }
   }
 }

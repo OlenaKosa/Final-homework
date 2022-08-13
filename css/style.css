@@ -735,9 +735,11 @@ h4 {
   }
 }
 .logo-links__link {
-  display: block;
   height: 120px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .logo-links__link {
@@ -751,87 +753,87 @@ h4 {
 }
 .logo-links .hillel {
   background-color: #1C4280;
-  background-image: url("../images/logos/hillel.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 217px 48px;
+}
+.logo-links .hillel img {
+  width: 217px;
+  height: 48px;
 }
 .logo-links .wannabiz {
   background-color: #143646;
-  background-image: url("../images/logos/wannabiz.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 199px 32px;
+}
+.logo-links .wannabiz img {
+  width: 199px;
+  height: 32px;
 }
 .logo-links .tapgerine {
   background-color: #F48B30;
-  background-image: url("../images/logos/tapgerine.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 179px 44px;
+}
+.logo-links .tapgerine img {
+  width: 179px;
+  height: 44px;
 }
 .logo-links .look3d {
   background-color: #9E4DC3;
-  background-image: url("../images/logos/3dlook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 180px 42px;
+}
+.logo-links .look3d img {
+  width: 180px;
+  height: 42px;
 }
 .logo-links .orangear {
   background-color: #FD9339;
-  background-image: url("../images/logos/orangear.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 174px 44px;
+}
+.logo-links .orangear img {
+  width: 174px;
+  height: 44px;
 }
 .logo-links .adtelligent {
   background-color: #E2E2E4;
-  background-image: url("../images/logos/adtelligent.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 195px 48px;
+}
+.logo-links .adtelligent img {
+  width: 195px;
+  height: 48px;
 }
 .logo-links .clickky {
   background-color: #C71C36;
-  background-image: url("../images/logos/clickky.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 138px 61px;
+}
+.logo-links .clickky img {
+  width: 138px;
+  height: 61px;
 }
 .logo-links .eco-leasing {
   background-color: #DCF3F9;
-  background-image: url("../images/logos/eco-leasing.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 146px 76px;
+}
+.logo-links .eco-leasing img {
+  width: 146px;
+  height: 76px;
 }
 .logo-links .infratek {
   background-color: #EAEAEA;
-  background-image: url("../images/logos/infratek.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 182px 60px;
+}
+.logo-links .infratek img {
+  width: 182px;
+  height: 60px;
 }
 .logo-links .city-park {
   background-color: #282240;
-  background-image: url("../images/logos/city-park.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 181px 38px;
+}
+.logo-links .city-park img {
+  width: 181px;
+  height: 38px;
 }
 .logo-links .artprint {
   background-color: #1D4568;
-  background-image: url("../images/logos/artprint.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 189px 46px;
+}
+.logo-links .artprint img {
+  width: 189px;
+  height: 46px;
 }
 .logo-links .ultimate-card {
   background-color: #000000;
-  background-image: url("../images/logos/ultimate-card.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 152px 95px;
+}
+.logo-links .ultimate-card img {
+  width: 152px;
+  height: 95px;
 }
 
 .slider-buttons__button {
