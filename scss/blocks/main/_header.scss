@@ -8,71 +8,6 @@
       margin-bottom: 80px;
     }
 
-  &__symbol {
-    @include bgimage(none,"../images/symbols/Symbol.svg",contain);
-    min-height: 100vh;
-    padding-bottom: 30px;
-    
-    @media (min-width: map-get($screen, tablet-sd)) {
-      padding-top: 50px;
-    }
-
-  }
-
-  &__symbol-title {
-    text-align: center;
-  }
-
-  &__symbol-button {
-    display: block;
-    min-width: 42px;
-    min-height: 42px;
-    @include bgimage(none,"../images/symbols/arrow-bottom.svg",18px 9px);
-    //border: 2px solid $contrast-text-color;
-    border: 2px solid color.change($contrast-text-color, $alpha: 0.5);
-    border-radius: 50%;
-  }
-
-  &__symbol-button:hover {
-    @include bgimage(none,"../images/symbols/arrow-bottom-active.svg",18px 9px);
-    //border: 2px solid $active-color;
-    border: 2px solid color.change($active-color, $alpha: 0.5);
-  }
-
-  &__definition {
-    color: $contrast-text-color;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    @media (min-width: map-get($screen, tablet-sd)) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    @media (min-width: map-get($screen, desktop-sd)) {
-      padding-left: 180px;
-      padding-right: 180px;
-    }
-
-    @media (min-width: map-get($screen, desktop-hd)) {
-      padding-left: 120px;
-      padding-right: 120px;
-    }
-  }
-
-  &__definition-title {
-    @include font(20px,24px,700);
-    margin-bottom: 30px;
-
-    @media (min-width: map-get($screen, tablet-sd)) {
-      @include font(30px,37px);
-    }
-  }
-
-  &__definition-text {
-    @include font(19px,30px);
-  }
-
   &__title {
     margin-bottom: 30px;
 
@@ -80,7 +15,6 @@
       margin-bottom: 60px;
     }
   }
-
 }
 
 .header::after {
