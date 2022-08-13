@@ -21,4 +21,9 @@
     margin-bottom: 30px;
     background-color: $light-hr-color;
   }
+
+  &__copyright {
+    @include font(16px,20px);
+    color: $colorless-color;
+  }
 }
