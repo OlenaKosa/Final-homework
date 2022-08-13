@@ -9,13 +9,14 @@
     display: flex;
     gap: 30px;
     width: 100%;
-    //margin-bottom: 30px;
+    overflow-x: auto;
     
     @media (min-width: map-get($screen, tablet-hd)) {
       flex-wrap: wrap;
       align-self: center;
       width: 375px;
       margin-right: 60px;
+      flex-shrink: 0;
     }
   }
 

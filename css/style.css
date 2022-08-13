@@ -420,6 +420,7 @@ h4 {
   display: flex;
   gap: 30px;
   width: 100%;
+  overflow-x: auto;
 }
 @media (min-width: 1024px) {
   .definition__promo {
@@ -427,6 +428,7 @@ h4 {
     align-self: center;
     width: 375px;
     margin-right: 60px;
+    flex-shrink: 0;
   }
 }
 .definition__promo-link {
