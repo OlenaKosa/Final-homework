@@ -30,4 +30,9 @@
     color: $text-color;
   }
 
+  @media (min-width: map-get($screen, tablet-sd)) and (max-width: (map-get($screen, tablet-hd)-1)) {
+    &:nth-last-child(1):nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+  }
 }

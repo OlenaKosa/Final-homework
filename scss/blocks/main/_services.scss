@@ -27,4 +27,28 @@
       width: calc(33.33% - 40px);
     }
   }
+
+  &__ecommerce {
+    background-image: url("../images/icons/Ecommerce.svg");
+  }
+
+  &__support {
+    background-image: url("../images/icons/Support.svg");
+  }
+  
+  &__coprorate {
+    background-image: url("../images/icons/Coprorate.svg");
+  }
+
+  &__trust {
+    background-image: url("../images/icons/Trust.svg");
+  }
+  
+  &__protection {
+    background-image: url("../images/icons/Protection.svg");
+  }
+  
+  &__court {
+    background-image: url("../images/icons/Court.svg");
+  }
 }

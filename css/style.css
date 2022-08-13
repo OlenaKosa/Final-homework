@@ -624,10 +624,11 @@ h4 {
 
 .servises-icon {
   background: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 24px;
   width: 92px;
   height: 92px;
-  padding: 14px;
 }
 .servises-icon img {
   width: 64px;
@@ -678,6 +679,24 @@ h4 {
   .services__card {
     width: calc(33.33% - 40px);
   }
+}
+.services__ecommerce {
+  background-image: url("../images/icons/Ecommerce.svg");
+}
+.services__support {
+  background-image: url("../images/icons/Support.svg");
+}
+.services__coprorate {
+  background-image: url("../images/icons/Coprorate.svg");
+}
+.services__trust {
+  background-image: url("../images/icons/Trust.svg");
+}
+.services__protection {
+  background-image: url("../images/icons/Protection.svg");
+}
+.services__court {
+  background-image: url("../images/icons/Court.svg");
 }
 
 .logo-links__title {
@@ -914,6 +933,11 @@ h4 {
   line-height: 22px;
   color: #000000;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .publications-card:nth-last-child(1):nth-child(odd) {
+    grid-column: 1/-1;
+  }
+}
 
 .publications {
   padding-top: 30px;
@@ -922,6 +946,42 @@ h4 {
 .publications__title {
   margin-bottom: 30px;
 }
+.publications__cards {
+  display: grid;
+  grid-gap: 30px;
+}
+@media (min-width: 768px) {
+  .publications__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .publications__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.publications__image1 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Publication-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.publications__image2 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Publication-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.publications__image3 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Publication-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .footer {
   background-color: #F5F5FA;
   padding: 30px;
