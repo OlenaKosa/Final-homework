@@ -420,14 +420,19 @@ h4 {
   display: flex;
   gap: 30px;
   width: 100%;
+  padding: 30px;
   overflow-x: auto;
+}
+@media (min-width: 768px) {
+  .definition__promo {
+    padding: 60px;
+  }
 }
 @media (min-width: 1024px) {
   .definition__promo {
     flex-wrap: wrap;
     align-self: center;
-    width: 375px;
-    margin-right: 60px;
+    width: 495px;
     flex-shrink: 0;
   }
 }
@@ -440,35 +445,44 @@ h4 {
 }
 .definition__body {
   width: 100%;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .definition__body {
+    padding: 60px;
+  }
 }
 @media (min-width: 1024px) {
   .definition__body {
-    margin-left: 60px;
     align-self: center;
     flex-grow: 1;
   }
 }
+.definition__hr {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 768px) {
+  .definition__hr {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
 @media (min-width: 1024px) {
-  .definition {
-    display: flex;
-    justify-content: space-between;
+  .definition__hr {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 1023px) {
   .definition__hr::before {
     content: "";
-    margin-top: 30px;
-    margin-bottom: 30px;
     display: block;
     width: 100%;
     height: 4px;
     background: rgba(255, 255, 255, 0.3);
-  }
-}
-@media (max-width: 1023px) and (min-width: 768px) {
-  .definition__hr::before {
-    margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 @media (min-width: 1024px) {
@@ -479,6 +493,22 @@ h4 {
     height: 100%;
     background: rgba(255, 255, 255, 0.3);
   }
+}
+.definition__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .definition__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+.definition__text {
+  font-size: 19px;
+  line-height: 30px;
 }
 
 .header {
@@ -531,42 +561,18 @@ h4 {
 }
 .header__definition {
   color: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .header__definition {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media (min-width: 1440px) {
-  .header__definition {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-@media (min-width: 1920px) {
   .header__definition {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
-.header__definition-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .header__definition-title {
-    font-size: 30px;
-    line-height: 37px;
+@media (min-width: 1920px) {
+  .header__definition {
+    padding-left: 220px;
+    padding-right: 220px;
   }
-}
-.header__definition-text {
-  font-size: 19px;
-  line-height: 30px;
 }
 .header__title {
   margin-bottom: 30px;

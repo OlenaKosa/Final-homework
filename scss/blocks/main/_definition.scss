@@ -9,13 +9,17 @@
     display: flex;
     gap: 30px;
     width: 100%;
+    padding: 30px;
     overflow-x: auto;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding: 60px;
+    }
     
     @media (min-width: map-get($screen, tablet-hd)) {
       flex-wrap: wrap;
       align-self: center;
-      width: 375px;
-      margin-right: 60px;
+      width: 495px;
       flex-shrink: 0;
     }
   }
@@ -31,37 +35,42 @@
 
   &__body {
     width: 100%;
+    padding: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding: 60px;
+    }
 
     @media (min-width: map-get($screen, tablet-hd)) {
-      margin-left: 60px;
       align-self: center;
       flex-grow: 1;
     }
   }
 
-  @media (min-width: map-get($screen, tablet-hd)) {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__hr {
-    //display: none;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+  
+    @media (min-width: map-get($screen, tablet-hd)) {
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   @media (max-width: (map-get($screen, tablet-hd)-1)) {
     &__hr::before {
       content: '';
-      margin-top: 30px;
-      margin-bottom: 30px;
       display: block;
       width: 100%;
       height: 4px;
       background: color.change($contrast-text-color, $alpha: 0.3);
-
-        @media (min-width: map-get($screen, tablet-sd)) {
-          margin-top: 60px;
-          margin-bottom: 60px;
-        }
       }
     }
 
@@ -74,4 +83,18 @@
       background: color.change($contrast-text-color, $alpha: 0.3);
     }
   }
+
+  &__title {
+    @include font(20px,24px,700);
+    margin-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      @include font(30px,37px);
+    }
+  }
+
+  &__text {
+    @include font(19px,30px);
+  }
+
 }
