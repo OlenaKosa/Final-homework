@@ -566,6 +566,9 @@ h4 {
   .header__definition {
     padding-left: 120px;
     padding-right: 120px;
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1920px) {
