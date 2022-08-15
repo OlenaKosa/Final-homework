@@ -989,23 +989,29 @@ h4 {
 .footer {
   background-color: #F5F5FA;
   padding: 30px;
+  text-align: center;
 }
-.footer__adresses {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.footer__adresses address {
+.footer__addresses address {
   font-size: 16px;
   line-height: 20px;
   color: #323264;
+  font-style: normal;
 }
-.footer__adresses::before {
+.footer__addresses::before {
   content: "";
   width: 100%;
   height: 2px;
   display: block;
   margin-bottom: 30px;
   background-color: #E6E6F0;
+}
+.footer__map {
+  color: #24A3FF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
 }
 .footer__copyright {
   font-size: 16px;
