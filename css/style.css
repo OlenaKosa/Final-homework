@@ -403,13 +403,6 @@ h4 {
   font-weight: 700;
 }
 
-.symbol {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media (min-width: 1024px) {
   .definition {
     display: flex;
@@ -527,13 +520,23 @@ h4 {
   background-image: url("../images/symbols/Symbol.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
+  padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .header__symbol {
     padding-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__symbol {
+    background-size: contain;
   }
 }
 .header__symbol-title {

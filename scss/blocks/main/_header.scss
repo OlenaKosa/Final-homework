@@ -9,14 +9,22 @@
     }
 
   &__symbol {
-    @include bgimage(none,"../images/symbols/Symbol.svg",contain);
+    @include bgimage(none,"../images/symbols/Symbol.svg");
     min-height: 100vh;
+    padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
     @media (min-width: map-get($screen, tablet-sd)) {
       padding-top: 50px;
     }
 
+    @media (min-width: map-get($screen, tablet-hd)) {
+      background-size: contain;
+    }
   }
 
   &__symbol-title {
