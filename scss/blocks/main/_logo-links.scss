@@ -14,7 +14,9 @@
   }
 
   @media (min-width: map-get($screen, desktop-hd)) {
-    margin: 0 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
     border-radius: 12px;
 
     .rounded-corner1 {
