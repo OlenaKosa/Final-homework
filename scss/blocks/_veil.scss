@@ -1,10 +1,11 @@
 .veil {
-  //display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // display: none;
+  position: relative;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
   height: 100vh;
   background-color: color.change($dark-subtitle-color,$alpha:.7);
 }

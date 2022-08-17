@@ -256,11 +256,11 @@
       </div>
       <div class="popup__subblock">
         <h4 class="popup__subtitle colorless-subtitle">How to answer you?</h4>
-        <input type="text" name="phone" placeholder="Phone number" class="popup__input">
-        <input type="text" name="email" placeholder="Email" class="popup__input">
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" class="popup__input">
+        <input type="email" name="email" placeholder="Email" class="popup__input">
       </div>
-      <input type="button" name="popup-submit" value="Send message" class="main-button button">
-      <input type="button" name="close" class="popup__close close button">
+      <button name="popup-submit" class="main-button button">Send message</button>
+      <button type="button" name="close" class="popup__close close button"></button>
     </form>
   </section>
 </body>

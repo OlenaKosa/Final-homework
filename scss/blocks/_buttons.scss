@@ -1,11 +1,14 @@
 .close {
   @include bgimage(transparent,"../images/symbols/close.svg",cover);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding: 7px;
+  border-radius: 8px;
+}
 
-  //background-image: url(../../images/symbols/close.svg);
+.close:hover {
+  background-color: $light-hr-color;
 }
 
 .main-button {
