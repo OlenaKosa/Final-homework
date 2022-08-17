@@ -16,6 +16,16 @@
 
   width: 650px;
 
+  &__title {
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   &__input {
     padding: 15px;
     width: 100%;
