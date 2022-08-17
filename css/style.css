@@ -1006,7 +1006,7 @@ h4 {
   padding: 30px;
 }
 
-.form {
+.popup {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1014,9 +1014,14 @@ h4 {
   background-color: #F5F5FA;
   box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
   border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 375px;
   width: 650px;
 }
-.form__input {
+.popup__input {
   padding: 15px;
   width: 100%;
   background-color: #FFFFFF;
@@ -1025,20 +1030,25 @@ h4 {
   font-size: 16px;
   line-height: 26px;
 }
-.form__input::placeholder {
+.popup__input::placeholder {
   color: #B3B3BA;
 }
-.form__subtitle {
+.popup__subtitle {
   font-size: 14px;
   line-height: 17px;
 }
-.form__subblock {
+.popup__subblock {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .veil {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100vh;
   background-color: rgba(50, 50, 100, 0.7);
 }
