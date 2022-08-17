@@ -1048,15 +1048,16 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 375px;
-  width: 650px;
+  max-width: 650px;
+  width: 100%;
 }
 .popup__title {
-  position: relative;
+  max-width: calc(100% - 30px);
 }
 .popup__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 30px;
 }
 .popup__input {
   padding: 15px;
