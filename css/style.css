@@ -403,6 +403,12 @@ h4 {
   font-weight: 700;
 }
 
+.colorless-subtitle {
+  color: #B3B3BA;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 @media (min-width: 1024px) {
   .definition {
     display: flex;
@@ -935,10 +941,7 @@ h4 {
 .publications-card__title-date {
   font-size: 12px;
   line-height: 15px;
-  font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #B3B3BA;
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 4px solid #E6E6F0;
@@ -1001,6 +1004,43 @@ h4 {
 .footer {
   background-color: #F5F5FA;
   padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: #F5F5FA;
+  box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+  border-radius: 12px;
+  width: 650px;
+}
+.form__input {
+  padding: 15px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.form__input::placeholder {
+  color: #B3B3BA;
+}
+.form__subtitle {
+  font-size: 14px;
+  line-height: 17px;
+}
+.form__subblock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.veil {
+  height: 100vh;
+  background-color: rgba(50, 50, 100, 0.7);
 }
 
 @media (max-width: 767px) {

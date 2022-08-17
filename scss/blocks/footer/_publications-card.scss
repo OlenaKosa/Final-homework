@@ -15,10 +15,8 @@
   }
 
   &__title-date {
-    @include font (12px, 15px,700);
+    @include font (12px, 15px);
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $colorless-color;
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 4px solid $light-hr-color;
