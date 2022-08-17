@@ -29,3 +29,9 @@
   color: $contrast-text-color;
   @include font(38px,46px,700);
 }
+
+.colorless-subtitle {
+  color: $colorless-color;
+  text-transform: uppercase;
+  font-weight: 700;
+}

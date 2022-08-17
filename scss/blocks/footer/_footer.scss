@@ -1,4 +1,40 @@
 .footer {
   background-color: $light-background;
   padding: 30px;
+
+  // &__addresses {
+  //   //padding-top: 30px;
+  //   //padding-bottom: 30px;
+
+  //   address {
+  //     @include font(16px,20px);
+  //     color: $dark-subtitle-color;
+  //     font-style: normal;
+  //   }
+  // }
+
+  // &__addresses::before {
+  //   content: '';
+  //   width: 100%;
+  //   height: 2px;
+  //   display: block;
+  //   margin-bottom: 30px;
+  //   background-color: $light-hr-color;
+  // }
+
+  // &__contacts {
+
+  // }
+
+  // &__map {
+  //   color: $light-subtitle-color;
+  //   text-transform: uppercase;
+  //   text-decoration: none;
+  //   @include font(12px,15px,700);
+  // }
+
+  // &__copyright {
+  //   @include font(16px,20px);
+  //   color: $colorless-color;
+  // }
 }

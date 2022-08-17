@@ -1,24 +1,30 @@
 @use 'sass:map';
 @use 'sass:color';
 @use "./variables" as *;
-@use "./mixins" as *;         
+@use "./mixins" as *;
 
 @import "./normalize";
 @import "./fonts";
 @import "./settings";
 
-@import "./blocks/main/titles";
+@import "./blocks/buttons";
+@import "./blocks/titles";
+
+@import "./blocks/main/definition";
 @import "./blocks/main/header";
 @import "./blocks/main/partition-link";
 @import "./blocks/main/services-icon";
 @import "./blocks/main/services-card";
 @import "./blocks/main/services";
 @import "./blocks/main/logo-links";
-@import "./blocks/main/main";
 @import "./blocks/main/slider-buttons";
 @import "./blocks/main/slider";
+
 @import "./blocks/footer/publications-card";
 @import "./blocks/footer/publications";
 @import "./blocks/footer/footer";
+
+@import "./blocks/popup";
+@import "./blocks/veil";
 
 @import "./not-for-mobile";
