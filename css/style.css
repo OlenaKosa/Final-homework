@@ -354,12 +354,6 @@ h4 {
     padding-right: 60px;
   }
 }
-@media (min-width: 1920px) {
-  .wrapper {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
-}
 
 .close {
   background-color: transparent;
