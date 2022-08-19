@@ -355,6 +355,10 @@ h4 {
   }
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .close {
   background-color: transparent;
   background-image: url("../images/symbols/close.svg");
@@ -1033,6 +1037,111 @@ h4 {
 
 .footer {
   background-color: #F5F5FA;
+}
+.footer__addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .footer__addresses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+.footer__addresses address {
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  font-style: normal;
+}
+.footer__addresses::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-bottom: 30px;
+  background-color: #E6E6F0;
+}
+.footer__address {
+  margin-bottom: 21px;
+}
+.footer__blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .footer__blocks {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .footer__blocks *:nth-child(n) {
+    flex-wrap: nowrap;
+  }
+  .footer__blocks *:nth-child(n):not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer__blocks *:nth-child(n):not(:last-child)::after {
+    content: "ttt";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #B3B3BA;
+  }
+}
+.footer__contacts {
+  margin-bottom: 30px;
+  order: 2;
+}
+@media (min-width: 768px) {
+  .footer__contacts {
+    margin-bottom: 0;
+    order: 3;
+  }
+}
+.footer__contacts svg:hover path {
+  fill: #F0145A;
+}
+.footer__map {
+  color: #24A3FF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+.footer__phone {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #46466E;
+  text-decoration: none;
+}
+.footer__email {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #24A3FF;
+  text-decoration: none;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+  order: 3;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    justify-items: end;
+    order: 2;
+  }
 }
 
 .popup {
