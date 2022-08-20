@@ -354,7 +354,8 @@ h4 {
     padding-right: 60px;
   }
 }
-.wrapper .invisible {
+
+.invisible {
   visibility: hidden;
 }
 
@@ -461,6 +462,7 @@ h4 {
 @media (min-width: 1024px) {
   .definition__promo {
     flex-wrap: wrap;
+    justify-content: end;
     align-self: center;
     width: 495px;
     flex-shrink: 0;

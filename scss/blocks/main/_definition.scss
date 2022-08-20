@@ -18,6 +18,7 @@
     
     @media (min-width: map-get($screen, tablet-hd)) {
       flex-wrap: wrap;
+      justify-content: end;
       align-self: center;
       width: 495px;
       flex-shrink: 0;
