@@ -603,15 +603,9 @@ h4 {
   .header__definition {
     padding-left: 120px;
     padding-right: 120px;
-    max-width: 1480px;
+    max-width: 1680px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (min-width: 1920px) {
-  .header__definition {
-    padding-left: 220px;
-    padding-right: 220px;
   }
 }
 .header__title {
