@@ -354,6 +354,9 @@ h4 {
     padding-right: 60px;
   }
 }
+.wrapper .invisible {
+  visibility: hidden;
+}
 
 .close {
   background-color: transparent;
@@ -550,7 +553,7 @@ h4 {
   }
 }
 .header__symbol {
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/Symbol.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -580,7 +583,7 @@ h4 {
   display: block;
   min-width: 42px;
   min-height: 42px;
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -589,7 +592,7 @@ h4 {
   border-radius: 50%;
 }
 .header__symbol-button:hover {
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/arrow-bottom-active.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1091,7 +1094,6 @@ h4 {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
   background-color: rgba(50, 50, 100, 0.7);
 }
 
