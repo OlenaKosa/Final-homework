@@ -359,6 +359,10 @@ h4 {
   white-space: nowrap;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .close {
   background-color: transparent;
   background-image: url("../images/symbols/close.svg");
@@ -462,6 +466,7 @@ h4 {
 @media (min-width: 1024px) {
   .definition__promo {
     flex-wrap: wrap;
+    justify-content: end;
     align-self: center;
     width: 495px;
     flex-shrink: 0;
@@ -554,7 +559,7 @@ h4 {
   }
 }
 .header__symbol {
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/Symbol.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -566,11 +571,6 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .header__symbol {
-    padding-top: 50px;
-  }
 }
 @media (min-width: 1024px) {
   .header__symbol {
@@ -584,7 +584,7 @@ h4 {
   display: block;
   min-width: 42px;
   min-height: 42px;
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -593,7 +593,7 @@ h4 {
   border-radius: 50%;
 }
 .header__symbol-button:hover {
-  background-color: none;
+  background-color: transparent;
   background-image: url("../images/symbols/arrow-bottom-active.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -607,15 +607,9 @@ h4 {
   .header__definition {
     padding-left: 120px;
     padding-right: 120px;
-    max-width: 1480px;
+    max-width: 1680px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (min-width: 1920px) {
-  .header__definition {
-    padding-left: 220px;
-    padding-right: 220px;
   }
 }
 .header__title {
@@ -1194,8 +1188,12 @@ h4 {
 }
 
 .veil {
-  position: relative;
-  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(50, 50, 100, 0.7);
 }
 
