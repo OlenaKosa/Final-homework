@@ -1,0 +1,31 @@
+.logo-and-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  // @media (min-width: map-get($screen, tablet-hd)) {
+  // }
+  
+  // @media (min-width: map-get($screen, desktop-sd)) {
+  // }
+  
+  @media (min-width: map-get($screen, desktop-hd)) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  &__logo {
+    
+  }
+
+  &__menu {
+
+  }
+}
