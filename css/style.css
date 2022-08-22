@@ -1067,7 +1067,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 26px;
 }
 @media (min-width: 768px) {
   .footer__blocks {
@@ -1077,13 +1077,14 @@ h4 {
 @media (min-width: 768px) {
   .footer__blocks *:nth-child(n) {
     flex-wrap: nowrap;
-  }
-  .footer__blocks *:nth-child(n):not(:last-child) {
-    margin-right: 10px;
+    position: relative;
   }
   .footer__blocks *:nth-child(n):not(:last-child)::after {
-    content: "ttt";
-    display: block;
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    right: -16px;
+    display: inline-block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
