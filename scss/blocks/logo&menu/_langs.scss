@@ -1,0 +1,14 @@
+.langs {
+  @include font(12px,16px,700);
+  letter-spacing: 1px;
+  color: $contrast-text-color;
+
+  &__lang {
+    padding: 5px 7px;
+  }
+
+  &__lang--active {
+    border-radius: 8px;
+    background-color: $active-color;
+  }
+}

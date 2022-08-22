@@ -1173,17 +1173,34 @@ h4 {
   }
 }
 
+.langs {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+.langs__lang {
+  padding: 5px 7px;
+}
+.langs__lang--active {
+  border-radius: 8px;
+  background-color: #F0145A;
+}
+
 .resources {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: rgba(245, 245, 250, 0.2);
+  padding: 10px 15px;
 }
 @media (min-width: 768px) {
   .resources {
     gap: 18px;
     justify-content: start;
     background: transparent;
+    padding: 0;
   }
   .resources > :nth-child(n) {
     position: relative;
