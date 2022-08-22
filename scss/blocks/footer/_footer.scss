@@ -120,6 +120,10 @@
     text-decoration: none;
   }
 
+  &__email:hover {
+    color: $active-color;
+  }
+
   &__copyright {
     @include font(16px,20px);
     color: $colorless-color;

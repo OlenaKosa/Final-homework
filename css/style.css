@@ -1150,6 +1150,9 @@ h4 {
   color: #24A3FF;
   text-decoration: none;
 }
+.footer__email:hover {
+  color: #F0145A;
+}
 .footer__copyright {
   font-size: 16px;
   line-height: 20px;
