@@ -254,9 +254,9 @@
   <section class="logo-and-menu">
     <div class="logo-and-menu__resources resources">
       <p class="langs">
-        <span lang="uk" class="langs__lang">УК</span>
-        <span lang="ru" class="langs__lang">РУ</span>
-        <span lang="en" class="langs__lang langs__lang--active">EN</span>
+        <a href="/" lang="uk" class="langs__lang">УК</a>
+        <a href="/" lang="ru" class="langs__lang">РУ</a>
+        <a href="/" lang="en" class="langs__lang langs__lang--active">EN</a>
       </p>
       <address class="resources__address not-for-mobile">Kyiv, Mechnikova str., 14/1</address>
       <a href="tel:0800211927" class="resources__phone">0800 211 927</a>
@@ -273,8 +273,8 @@
           </svg>
       </div>
     </div>
-    <div class="logo-and-menu__logo logo">
-      <a href="/"><img src="./images/symbols/Logo-light.svg" alt="Logo"></a>
+    <div class="logo-and-menu__logo logo not-for-mobile">
+      <a href="/"><img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="130px" height="60px"></a>
     </div>
     <div class="logo-and-menu__menu menu not-for-mobile">
       <a href="/" class="menu__link">about us</a>
@@ -283,9 +283,14 @@
       <a href="/" class="menu__link">publications</a>
       <a href="/" class="menu__link">contact</a>
     </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel fugit, id minus alias ratione earum suscipit atque iste, aliquid vitae officia, a itaque doloribus possimus pariatur molestiae. Perferendis, quibusdam!
-    </p>
+    <div class="for-mobile-only mobile-logo-menu">
+      <a href="/" class="mobile-logo-menu__logo">
+        <img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="70px" height="32px">
+        <img src="./images/symbols/Slash.svg" alt="slash" width="12px" height="26px">
+        <span>services</span>
+      </a>
+      <button type="button" class="mobile-logo-menu__menu-button"></button>
+    </div>
   </section>
   <section class="veil">
     <form action="/" method="post" class="popup">
@@ -301,7 +306,7 @@
         <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" class="popup__input">
         <input type="email" name="email" placeholder="Email" class="popup__input">
       </div>
-      <button name="popup-submit" class="main-button button">Send message</button>
+      <button name="popup-submit" type="submit" class="main-button button">Send message</button>
       <button type="button" name="close" class="popup__close close button"></button>
     </form>
   </section>

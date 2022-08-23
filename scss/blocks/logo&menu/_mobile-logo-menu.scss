@@ -1,0 +1,28 @@
+.mobile-logo-menu {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    gap: 4px;
+    @include font(20px,24px);
+    color: $contrast-text-color;
+    text-decoration: none;
+  }
+
+  &__menu-button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    @include bgimage(transparent,"../images/symbols/burger-menu.svg",contain);
+    //background-image: url("../../../images/symbols/burger-menu.svg");
+  }
+
+  &__menu-button:active {
+    //background-color: $light-hr-color;
+    background-color: $langs_dark_hover;
+
+  }
+}

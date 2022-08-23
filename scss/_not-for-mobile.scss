@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+  .for-mobile-only {
+      display: none;
+    }
+  }
