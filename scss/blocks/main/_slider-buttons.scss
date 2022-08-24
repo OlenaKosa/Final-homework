@@ -8,6 +8,10 @@
     border-radius: 50%;
   }
 
+  &__button:hover {
+    background-color:  color.change($light-subtitle-color, $alpha: 0.6);
+  }
+
   &__button:active {
     background-color: $light-subtitle-color;
   }

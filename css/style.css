@@ -892,6 +892,9 @@ h4 {
   background-color: rgba(36, 163, 255, 0.2);
   border-radius: 50%;
 }
+.slider-buttons__button:hover {
+  background-color: rgba(36, 163, 255, 0.6);
+}
 .slider-buttons__button:active {
   background-color: #24A3FF;
 }
