@@ -251,6 +251,7 @@
       <!-- end footer -->
     </div>
   </footer>
+  <!-- mobile header logo & menu -->
   <section class="logo-and-menu">
     <div class="logo-and-menu__resources resources">
       <p class="langs">
@@ -292,7 +293,21 @@
       <button type="button" class="mobile-logo-menu__menu-button"></button>
     </div>
   </section>
-  <section class="veil">
+  <!-- end mobile header logo & menu  -->
+  <!-- popup mobile menu -->
+  <section class="veil veil__mobile-menu">
+    <div class="mobile-menu">
+      <a href="/" class="mobile-menu__link">about us</a>
+      <a href="/" class="mobile-menu__link">services</a>
+      <a href="/" class="mobile-menu__link">team</a>
+      <a href="/" class="mobile-menu__link">publications</a>
+      <a href="/" class="mobile-menu__link">contact</a>
+      <button type="button" name="mobile-menu-close" class="mobile-menu__close close button"></button>
+    </div>
+  </section>
+  <!-- end popup mobile menu -->
+  <!-- popup form -->
+  <section class="veil veil__popup-form">
     <form action="/" method="post" class="popup">
       <h3 class="main-title popup__title">
         We would like to help you
@@ -307,8 +322,9 @@
         <input type="email" name="email" placeholder="Email" class="popup__input">
       </div>
       <button name="popup-submit" type="submit" class="main-button button">Send message</button>
-      <button type="button" name="close" class="popup__close close button"></button>
+      <button type="button" name="popup-form-close" class="popup__close close button"></button>
     </form>
   </section>
+  <!-- end popup form -->
 </body>
 </html>
