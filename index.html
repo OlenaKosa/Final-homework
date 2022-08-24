@@ -228,7 +228,7 @@
         </div>
       </section>
       <!-- footer -->
-      <footer class="footer__addresses">
+      <section class="footer__addresses">
         <div class="footer__address footer__blocks">
           <address>
             Kyiv, Mechnikova str., 14/1
@@ -241,13 +241,13 @@
               <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
             </svg>
           </a>
-          <a href="tel: 0800211927" class="footer__phone nowrap">0800 211 927</a>
-          <a href="mailto: contact@forstudy.space" class="footer__email">contact@forstudy.space</a>
+          <a href="tel:0800211927" class="footer__phone nowrap">0800 211 927</a>
+          <a href="mailto:contact@forstudy.space" class="footer__email">contact@forstudy.space</a>
         </div>
         <p class="footer__copyright">
           © 2021 HLEGAL Law company, LLC
         </p>
-      </footer>
+      </section>
       <!-- end footer -->
     </div>
   </footer>
@@ -275,7 +275,7 @@
       </div>
     </div>
     <div class="logo-and-menu__logo logo not-for-mobile">
-      <a href="/"><img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="130px" height="60px"></a>
+      <a href="/"><img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="130" height="60"></a>
     </div>
     <div class="logo-and-menu__menu menu not-for-mobile">
       <a href="/" class="menu__link">about us</a>
@@ -286,11 +286,11 @@
     </div>
     <div class="for-mobile-only mobile-logo-menu">
       <a href="/" class="mobile-logo-menu__logo">
-        <img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="70px" height="32px">
-        <img src="./images/symbols/Slash.svg" alt="slash" width="12px" height="26px">
+        <img src="./images/symbols/Logo-light.svg" alt="hlegal logo" width="70" height="32">
+        <img src="./images/symbols/Slash.svg" alt="slash" width="12" height="26">
         <span>services</span>
       </a>
-      <button type="button" class="mobile-logo-menu__menu-button"></button>
+      <button type="button" class="mobile-logo-menu__menu-button"  id="open-mobile-menu"></button>
     </div>
   </section>
   <!-- end mobile header logo & menu  -->
@@ -302,7 +302,7 @@
       <a href="/" class="mobile-menu__link">team</a>
       <a href="/" class="mobile-menu__link">publications</a>
       <a href="/" class="mobile-menu__link">contact</a>
-      <button type="button" name="mobile-menu-close" class="mobile-menu__close close button"></button>
+      <button type="button" id="close-mobile-menu" class="mobile-menu__close close button"></button>
     </div>
   </section>
   <!-- end popup mobile menu -->
@@ -322,9 +322,22 @@
         <input type="email" name="email" placeholder="Email" class="popup__input">
       </div>
       <button name="popup-submit" type="submit" class="main-button button">Send message</button>
-      <button type="button" name="popup-form-close" class="popup__close close button"></button>
+      <button type="button" id="close-popup-form" class="popup__close close button"></button>
     </form>
   </section>
   <!-- end popup form -->
+  <script>
+    const mobileMenu = document.querySelector('.veil__mobile-menu')
+    const openMenuButton = document.querySelector('#open-mobile-menu')
+    const closeMenuButton = document.querySelector('#close-mobile-menu')
+
+    openMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.add('veil__mobile-menu--showed')
+    })
+
+    closeMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('veil__mobile-menu--showed')
+    })
+  </script>
 </body>
 </html>

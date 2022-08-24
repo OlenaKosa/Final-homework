@@ -10,7 +10,15 @@
     display: none;
   }
 
+  &__popup-form--showed {
+    display: block;
+  }
+
   &__mobile-menu {
+    display: none;
+  }
+
+  &__mobile-menu--showed {
     display: block;
   }
 }
