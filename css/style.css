@@ -1306,6 +1306,8 @@ h4 {
 }
 
 .logo-and-menu {
+  min-width: 375px;
+  overflow: auto;
   position: absolute;
   top: 0;
   right: 0;
