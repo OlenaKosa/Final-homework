@@ -73,7 +73,7 @@
                 In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
               </p>
             </div>
-            <button type="button" class="main-button button">Free consultation</button>
+            <button type="button" class="main-button button" id="open-popup-form">Free consultation</button>
           </div>
           <div class="entry__flex entry__description">
             <div class="entry__hr"></div>
@@ -227,6 +227,18 @@
 
     closeMenuButton.addEventListener('click', () => {
       mobileMenu.classList.remove('veil__mobile-menu--showed')
+    })
+
+    const form = document.querySelector('.veil__popup-form')
+    const openForm = document.querySelector('#open-popup-form')
+    const closeForm = document.querySelector('#close-popup-form')
+
+    openForm.addEventListener('click', () => {
+      form.classList.add('veil__popup-form--showed')
+    })
+
+    closeForm.addEventListener('click', () => {
+      form.classList.remove('veil__popup-form--showed')
     })
   </script>
 </body>

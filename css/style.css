@@ -1531,10 +1531,19 @@ h4 {
   padding: 30px;
   background-color: #F5F5FA;
   box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
-  border-radius: 12px;
   min-width: 375px;
   max-width: 650px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .popup {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 768px) {
+  .popup {
+    border-radius: 12px;
+  }
 }
 .popup__title {
   max-width: calc(100% - 32px);
