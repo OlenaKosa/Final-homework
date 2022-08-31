@@ -678,6 +678,75 @@ h4 {
   content: " " url(../images/symbols/arrow_right_active.svg);
 }
 
+.entry {
+  gap: 30px;
+  color: #FFFFFF;
+}
+.entry__flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.entry__card {
+  align-items: center;
+  gap: 28px;
+}
+.entry__card button {
+  padding: 18px 30px;
+}
+.entry__title {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.entry__text {
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+.entry__hr::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.entry__description {
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .entry__description {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .entry__description {
+    padding-top: 30px;
+  }
+}
+.entry__list {
+  padding-left: 0;
+  margin: 0;
+  gap: 15px;
+}
+.entry__list li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  line-height: 26px;
+}
+.entry__list li::before {
+  content: "";
+  display: block;
+  min-width: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F0145A;
+  margin-right: 8px;
+}
+
 .servises-icon {
   background: #FFFFFF;
   background-repeat: no-repeat;

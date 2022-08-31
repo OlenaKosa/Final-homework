@@ -1,0 +1,82 @@
+.entry {
+  gap: 30px;
+  color: $contrast-text-color;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__card {
+  align-items: center;
+  gap: 28px;
+
+    button {
+      padding: 18px 30px;
+    }
+  }
+
+  &__title {
+    @include font(22px,27px,700);
+  }
+
+  &__text {
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+  }
+
+  &__hr {
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+
+    // @media (min-width: map-get($screen, tablet-sd)) {
+    //   padding-top: 60px;
+    // }
+  }
+
+  &__hr::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: color.change($contrast-text-color, $alpha: 0.3);
+  }
+
+  &__description {
+    gap: 30px;
+
+    @media (max-width: map-get($screen, tablet-sd)-1) {
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+        padding-top: 30px;
+      }
+  }
+
+  &__list {
+    padding-left: 0;
+    margin: 0;
+    gap: 15px;
+
+    li {
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+      @include font(18px,26px);
+    }
+
+    li::before {
+      content: '';
+      display: block;
+      min-width: 6px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $active-color;
+      margin-right: 8px;
+    }
+  }
+}
