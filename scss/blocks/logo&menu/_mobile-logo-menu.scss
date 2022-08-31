@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
 
+  a {
+    color: $contrast-text-color;
+    text-decoration: none;
+  }
+
   &__logo {
     display: flex;
     gap: 4px;

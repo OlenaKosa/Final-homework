@@ -174,6 +174,47 @@
   </main>
   <footer class="footer">
     <div class="wrapper">
+      <section class="publications">
+        <h2><a href="/" class="partition-link">Publications</a></h2>
+        <h3 class="publications__title main-title">
+          We have something to tell
+        </h3>
+        <div class="publications__cards publications-cards">
+          <div class="publications-card">
+            <div class="publications-card__image publications__image1">
+            </div>
+            <div class="publications-card__title subtitle">Equity associate</div>
+            <p class="publications-card__title-date colorless-subtitle">
+              <time datetime="2021-04-22">April 22</time>
+            </p>
+            <p class="publications-card__context">
+              I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+            </p>
+          </div>
+          <div class="publications-card">
+            <div class="publications-card__image publications__image2">
+            </div>
+            <div class="publications-card__title subtitle">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</div>
+            <p class="publications-card__title-date colorless-subtitle">
+              <time datetime="2021-09-29">September 29</time>
+            </p>
+            <p class="publications-card__context">
+              And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
+            </p>
+          </div>
+          <div class="publications-card">
+            <div class="publications-card__image publications__image3">
+            </div>
+            <div class="publications-card__title subtitle">Millennial Testament</div>
+            <p class="publications-card__title-date colorless-subtitle">
+              <time datetime="2021-08-19">August 19</time>
+            </p>
+            <p class="publications-card__context">
+              What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- footer -->
       <section class="footer__addresses footer__addresses-alternative">
         <div class="footer__container">
@@ -212,6 +253,26 @@
     </nav>
   </section>
   <!-- end popup mobile menu -->
+  <!-- popup form -->
+  <section class="veil veil__popup-form">
+    <form action="/" method="post" class="popup">
+      <h3 class="main-title popup__title">
+        We would like to help you
+      </h3>
+      <div class="popup__subblock">
+        <input type="text" name="name" placeholder="Name" class="popup__input">
+        <textarea name="message" id="popup-message" cols="30" rows="4" placeholder="Message" class="popup__input"></textarea>
+      </div>
+      <div class="popup__subblock">
+        <h4 class="popup__subtitle colorless-subtitle">How to answer you?</h4>
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" class="popup__input">
+        <input type="email" name="email" placeholder="Email" class="popup__input">
+      </div>
+      <button name="popup-submit" type="submit" class="main-button button">Send message</button>
+      <button type="button" id="close-popup-form" class="popup__close close button"></button>
+    </form>
+  </section>
+  <!-- end popup form -->
   <script>
     const mobileMenu = document.querySelector('.veil__mobile-menu')
     const openMenuButton = document.querySelector('#open-mobile-menu')

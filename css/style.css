@@ -1270,6 +1270,10 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
+.mobile-logo-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .mobile-logo-menu__logo {
   display: flex;
   gap: 4px;
