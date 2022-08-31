@@ -1183,6 +1183,19 @@ h4 {
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: end;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .footer__addresses-alternative {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__container {
+    margin-bottom: 30px;
   }
 }
 

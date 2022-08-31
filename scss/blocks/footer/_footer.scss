@@ -139,6 +139,22 @@
       grid-column: 2/3;
       grid-row: 1/2;
       justify-self: end;
+      align-self: flex-start;
+    }
+  }
+
+  &__addresses-alternative {
+    @media (min-width: map-get($screen, tablet-sd)) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      //justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__container {
+    @media (min-width: map-get($screen, tablet-sd)) and (max-width: map-get($screen, tablet-hd)-1) {
+      margin-bottom: 30px;
     }
   }
 }
