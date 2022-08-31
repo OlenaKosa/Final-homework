@@ -1,0 +1,19 @@
+.mobile-logo-menu-dark {
+
+  a {
+    color: $light-subtitle-color;
+  }
+
+  &__logo {
+    color: $dark-subtitle-color;
+  }
+
+  &__menu-button {
+    @include bgimage(transparent,"../images/symbols/burger-dark.svg",contain);
+  }
+
+  &__menu-button:active {
+    //background-color: $light-hr-color;
+    background-color: $langs_dark_hover;
+  }
+}

@@ -1,12 +1,21 @@
 .logo-and-menu {
   min-width: 375px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  &__main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $contrast-text-color;
+  }
 
   @media (min-width: map-get($screen, tablet-sd)) {
     padding-top: 50px;
@@ -53,10 +62,5 @@
     display: flex;
     gap: 4px;
     @include font(36px, 44px);
-
-    a {
-      text-decoration: none;
-      color: $contrast-text-color;
-    }
   }
 }

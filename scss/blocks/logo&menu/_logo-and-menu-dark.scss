@@ -1,0 +1,13 @@
+.logo-and-menu-dark {
+  padding-bottom: 60px;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__logo {
+    a {
+      color: $dark-subtitle-color;
+    }
+  }
+}
