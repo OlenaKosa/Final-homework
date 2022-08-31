@@ -28,12 +28,9 @@
   }
 
   &__hr {
-    // padding-top: 30px;
-    // padding-bottom: 30px;
-
-    // @media (min-width: map-get($screen, tablet-sd)) {
-    //   padding-top: 60px;
-    // }
+    @media (min-width: map-get($screen, tablet-sd)) {
+      padding-top: 30px;
+    }
   }
 
   &__hr::before {
@@ -50,16 +47,16 @@
     @media (max-width: map-get($screen, tablet-sd)-1) {
       padding-bottom: 30px;
     }
-
-    @media (min-width: map-get($screen, tablet-sd)) {
-        padding-top: 30px;
-      }
   }
 
   &__list {
     padding-left: 0;
     margin: 0;
     gap: 15px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      width: calc(50% - 30px);
+    }
 
     li {
       list-style: none;
@@ -78,5 +75,19 @@
       background-color: $active-color;
       margin-right: 8px;
     }
+  }
+
+  &__lists {
+    gap: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 80px;
   }
 }

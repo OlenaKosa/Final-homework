@@ -704,6 +704,11 @@ h4 {
   gap: 28px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .entry__hr {
+    padding-top: 30px;
+  }
+}
 .entry__hr::before {
   content: "";
   display: block;
@@ -719,15 +724,15 @@ h4 {
     padding-bottom: 30px;
   }
 }
-@media (min-width: 768px) {
-  .entry__description {
-    padding-top: 30px;
-  }
-}
 .entry__list {
   padding-left: 0;
   margin: 0;
   gap: 15px;
+}
+@media (min-width: 768px) {
+  .entry__list {
+    width: calc(50% - 30px);
+  }
 }
 .entry__list li {
   list-style: none;
@@ -745,6 +750,19 @@ h4 {
   border-radius: 50%;
   background-color: #F0145A;
   margin-right: 8px;
+}
+.entry__lists {
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .entry__lists {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+.entry__header {
+  margin-bottom: 80px;
 }
 
 .servises-icon {
