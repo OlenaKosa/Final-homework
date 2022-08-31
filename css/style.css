@@ -1485,6 +1485,16 @@ h4 {
     align-self: end;
   }
 }
+.logo-and-menu__logo {
+  display: flex;
+  gap: 4px;
+  font-size: 36px;
+  line-height: 44px;
+}
+.logo-and-menu__logo a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 .mobile-menu {
   position: absolute;

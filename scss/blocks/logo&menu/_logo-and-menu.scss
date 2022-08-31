@@ -48,4 +48,15 @@
       align-self: end;
     }
   }
+
+  &__logo {
+    display: flex;
+    gap: 4px;
+    @include font(36px, 44px);
+
+    a {
+      text-decoration: none;
+      color: $contrast-text-color;
+    }
+  }
 }
