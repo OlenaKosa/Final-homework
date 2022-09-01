@@ -1210,7 +1210,10 @@ h4 {
   color: #323264;
   font-style: normal;
 }
-.footer__addresses::before {
+.footer__hr {
+  position: relative;
+}
+.footer__hr::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -1218,7 +1221,6 @@ h4 {
   width: 100%;
   height: 2px;
   display: block;
-  margin-bottom: 30px;
   background-color: #E6E6F0;
 }
 .footer__address {
