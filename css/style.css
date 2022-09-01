@@ -470,6 +470,14 @@ h4 {
   font-weight: 700;
 }
 
+.colorless-text {
+  color: #B3B3BA;
+}
+
+.dark-subtitle {
+  color: #323264;
+}
+
 @media (min-width: 1024px) {
   .definition {
     display: flex;
@@ -1177,6 +1185,110 @@ h4 {
 }
 .publications__paddings {
   padding: 30px 0;
+}
+
+.team-card {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 15px;
+}
+.team-card__image {
+  height: 300px;
+  border-radius: 12px;
+  grid-column: 1/-1;
+}
+@media (min-width: 768px) {
+  .team-card__image {
+    height: 400px;
+  }
+}
+.team-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.team-card__subtitle {
+  font-size: 14px;
+  line-height: 22px;
+}
+.team-card__button {
+  display: block;
+  background-color: #F5F5FA;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url("../images/symbols/arrow_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: end;
+}
+.team-card__button:hover {
+  background-image: url("../images/symbols/arrow_right_active.svg");
+}
+
+.team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title {
+  margin-bottom: 30px;
+}
+.team__cards {
+  display: grid;
+  grid-gap: 30px;
+}
+@media (min-width: 768px) {
+  .team__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .team__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.team__image1 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team__image2 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team__image3 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team__image4 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team__image5 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team__image5 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Team-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {

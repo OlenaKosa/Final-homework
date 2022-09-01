@@ -1,0 +1,45 @@
+.team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-gap: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
+  &__image1 {
+    @include bgimage($body-background-color,"../images/pictures/Team-1.jpg");
+  }
+
+  &__image2 {
+    @include bgimage($body-background-color,"../images/pictures/Team-2.jpg");
+  }
+
+  &__image3 {
+    @include bgimage($body-background-color,"../images/pictures/Team-3.jpg");
+  }
+
+  &__image4 {
+    @include bgimage($body-background-color,"../images/pictures/Team-4.jpg");
+  }
+
+  &__image5 {
+    @include bgimage($body-background-color,"../images/pictures/Team-5.jpg");
+  }
+
+  &__image5 {
+    @include bgimage($body-background-color,"../images/pictures/Team-6.jpg");
+  }
+}

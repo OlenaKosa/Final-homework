@@ -1,0 +1,40 @@
+.team-card {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 15px;
+
+  &__image {
+    height: 300px;
+    border-radius: 12px;
+    grid-column: 1 / -1;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      height: 400px;
+    }
+  }
+
+  &__title {
+    @include font (16px, 20px, 700);
+  }
+
+  &__subtitle {
+    @include font (14px, 22px);
+  }
+
+  &__button {
+    display: block;
+    background-color: $light-background;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url("../images/symbols/arrow_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self: end;
+  }
+
+  &__button:hover {
+    background-image: url("../images/symbols/arrow_right_active.svg");
+  }
+}
