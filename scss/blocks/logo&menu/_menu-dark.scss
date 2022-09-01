@@ -12,18 +12,4 @@
     height: 2px;
     background-color: $light-subtitle-color;
   }
-
-  &__link:active {
-    color: $active-color;
-  }
-  
-  &__link:active::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: $active-color;
-  }
 }
