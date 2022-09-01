@@ -7,6 +7,12 @@
     @media (min-width: map-get($screen, tablet-sd)) {
       margin-bottom: 60px;
     }
+
+    @media (min-width: map-get($screen, tablet-hd)) {
+      margin-right: 120px;
+      margin-left: 120px;
+      max-width: 1360px;
+    }
   }
 
   &__cards {

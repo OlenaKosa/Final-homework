@@ -1237,6 +1237,13 @@ h4 {
     margin-bottom: 60px;
   }
 }
+@media (min-width: 1024px) {
+  .team__title {
+    margin-right: 120px;
+    margin-left: 120px;
+    max-width: 1360px;
+  }
+}
 .team__cards {
   display: grid;
   grid-gap: 30px;
@@ -1649,6 +1656,9 @@ h4 {
 
 .logo-and-menu {
   min-width: 375px;
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   display: flex;
   flex-direction: column;
