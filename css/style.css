@@ -1132,6 +1132,20 @@ h4 {
   background-position: center;
   background-size: cover;
 }
+.publications__image4 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Publication-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.publications__image5 {
+  background-color: #FFFFFF;
+  background-image: url("../images/pictures/Publication-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .footer {
   background-color: #F5F5FA;

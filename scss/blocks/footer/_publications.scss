@@ -30,4 +30,12 @@
   &__image3 {
     @include bgimage($body-background-color,"../images/pictures/Publication-3.jpg");
   }
+
+  &__image4 {
+    @include bgimage($body-background-color,"../images/pictures/Publication-4.jpg");
+  }
+
+  &__image5 {
+    @include bgimage($body-background-color,"../images/pictures/Publication-5.jpg");
+  }
 }
