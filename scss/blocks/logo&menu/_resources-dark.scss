@@ -1,0 +1,25 @@
+.resources-dark {
+  background: $light-background;
+
+  @media (min-width: map-get($screen, tablet-sd)) {
+    background: transparent;
+  }
+
+  &__address {
+    color: $colorless-color;
+    }
+
+  &__phone {
+    color: $colorless-color;
+  }
+
+  &__facebook {
+    svg path {
+      fill: $colorless-color;
+    }
+
+    svg:hover path {
+      fill: $active-color;
+    }
+  }
+}

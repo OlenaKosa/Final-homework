@@ -14,7 +14,6 @@
 
   a {
     text-decoration: none;
-    color: $contrast-text-color;
   }
 
   @media (min-width: map-get($screen, tablet-sd)) {
@@ -62,5 +61,9 @@
     display: flex;
     gap: 4px;
     @include font(36px, 44px);
+
+    a {
+      color: $contrast-text-color;
+    }
   }
 }

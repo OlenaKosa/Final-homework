@@ -1,0 +1,14 @@
+.langs-dark {
+
+  &__lang {
+    color: $colorless-color;
+  }
+
+  &__lang:not(&__lang--active):hover {
+    background-color: $light-background;
+  }
+
+  &__lang--active {
+    color: $contrast-text-color;
+  }
+}

@@ -10,7 +10,7 @@
     text-decoration: none;
   }
 
-  &__lang:hover {
+  &__lang:not(&__lang--active):hover {
     background-color: $langs_dark_hover;
   }
 

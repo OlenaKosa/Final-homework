@@ -5,7 +5,9 @@
   }
 
   &__logo {
-    color: $dark-subtitle-color;
+    a{
+      color: $dark-subtitle-color;
+    }
   }
 
   &__menu-button {
