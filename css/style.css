@@ -1188,7 +1188,6 @@ h4 {
 }
 
 .team-card {
-  padding: 30px;
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-gap: 15px;
@@ -1228,11 +1227,15 @@ h4 {
 }
 
 .team {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .team__title {
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .team__title {
+    margin-bottom: 60px;
+  }
 }
 .team__cards {
   display: grid;
@@ -1241,6 +1244,7 @@ h4 {
 @media (min-width: 768px) {
   .team__cards {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
   }
 }
 @media (min-width: 1024px) {
@@ -1283,7 +1287,7 @@ h4 {
   background-position: center;
   background-size: cover;
 }
-.team__image5 {
+.team__image6 {
   background-color: #FFFFFF;
   background-image: url("../images/pictures/Team-6.jpg");
   background-repeat: no-repeat;

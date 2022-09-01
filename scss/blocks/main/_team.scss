@@ -1,9 +1,12 @@
 .team {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 
   &__title {
     margin-bottom: 30px;
+
+    @media (min-width: map-get($screen, tablet-sd)) {
+      margin-bottom: 60px;
+    }
   }
 
   &__cards {
@@ -12,6 +15,7 @@
 
     @media (min-width: map-get($screen, tablet-sd)) {
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 60px;
     }
 
     @media (min-width: map-get($screen, tablet-hd)) {
@@ -39,7 +43,7 @@
     @include bgimage($body-background-color,"../images/pictures/Team-5.jpg");
   }
 
-  &__image5 {
+  &__image6 {
     @include bgimage($body-background-color,"../images/pictures/Team-6.jpg");
   }
 }
