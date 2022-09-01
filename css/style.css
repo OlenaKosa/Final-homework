@@ -363,6 +363,10 @@ h4 {
   visibility: hidden;
 }
 
+.center {
+  text-align: center;
+}
+
 .close {
   background-color: transparent;
   background-image: url("../images/symbols/close.svg");
@@ -387,7 +391,7 @@ h4 {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  padding: 18px 0;
+  padding: 18px 30px;
   text-align: center;
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
@@ -396,6 +400,26 @@ h4 {
 
 .button {
   cursor: pointer;
+}
+
+.link-button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.publication-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 0;
+  padding: 8px 30px 10px;
+  border-radius: 10px;
+  background-color: #E6E6F0;
+  color: #323264;
+}
+
+.publication-button--current {
+  background-color: #FFFFFF;
 }
 
 .main-title {
@@ -690,9 +714,6 @@ h4 {
 .entry__card {
   align-items: center;
   gap: 28px;
-}
-.entry__card button {
-  padding: 18px 30px;
 }
 .entry__title {
   font-size: 22px;
@@ -1145,6 +1166,17 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.publications__buttons {
+  display: inline-block;
+  font-size: 0;
+  background-color: #E6E6F0;
+  border-radius: 12px;
+  padding: 2px;
+  margin-bottom: 30px;
+}
+.publications__paddings {
+  padding: 30px 0;
 }
 
 .footer {

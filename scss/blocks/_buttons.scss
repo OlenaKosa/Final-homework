@@ -16,7 +16,7 @@
   color: $contrast-text-color;
   background-color: $light-subtitle-color;
   @include font(16px,20px,700);
-  padding: 18px 0;
+  padding: 18px 30px;
   text-align: center;
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
@@ -25,4 +25,22 @@
 
 .button {
   cursor: pointer;
+}
+
+.link-button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.publication-button {
+  @include font(16px,20px,700);
+  border: 0;
+  padding: 8px 30px 10px;
+  border-radius: 10px;
+  background-color: $light-hr-color;
+  color: $dark-subtitle-color;
+}
+
+.publication-button--current {
+  background-color: $body-background-color;
 }
